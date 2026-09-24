@@ -24,8 +24,8 @@ jobs:
 
       - name: Set MLflow tracking
         run: |
-          export MLFLOW_TRACKING_URI=file:./mlruns
-
+          echo "MLFLOW_ALLOW_FILE_STORE=true" >> $GITHUB_ENV
+      
       - name: Run training pipeline
         run: |
           export PYTHONPATH=$PYTHONPATH:$(pwd)
