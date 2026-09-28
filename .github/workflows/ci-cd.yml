@@ -53,3 +53,6 @@ jobs:
         run: |
           docker push jesrin123/mlops-pipeline:${{ github.sha }}
           docker push jesrin123/mlops-pipeline:latest
+          
+
+# sjs
